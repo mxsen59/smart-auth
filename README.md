@@ -36,7 +36,7 @@ sudo nano .bashrc
 ```
 then add at the bottom of .bashrc file
 ```shell
-alias smart-auth='/home/masen/Desktop/run_authorizer.sh &'
+alias smart-auth='/path/to/your/custom/shell/script.sh &'
 ```
 
 ## Dependencies

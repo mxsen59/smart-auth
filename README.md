@@ -33,9 +33,9 @@ python3 authorizer.py
 ## Adding smart-auth to .bashrc for simple system wide execution
 ```
 sudo nano .bashrc
-```.bashrc
-then add at the bottom of .bashrc file
 ```
+then add at the bottom of .bashrc file
+```shell
 alias smart-auth='/home/masen/Desktop/run_authorizer.sh &'
 ```
 

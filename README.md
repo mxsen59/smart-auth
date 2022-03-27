@@ -22,7 +22,7 @@ python3 authorizer.py
 
 ## Custom shell script to run smart-auth
 my_shell_script_name.sh
-```
+```shell
 #!/bin/bash
 
 cd /home/masen/Projects/smart-sys-auth/src/

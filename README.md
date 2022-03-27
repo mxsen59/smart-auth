@@ -25,7 +25,7 @@ my_shell_script_name.sh
 ```shell
 #!/bin/bash
 
-cd /home/masen/Projects/smart-sys-auth/src/
+cd /path/to/smart-auth/src/directory
 
 python3 authorizer.py
 ```

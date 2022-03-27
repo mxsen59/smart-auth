@@ -9,7 +9,7 @@ git clone https://github.com/masen-f/smart-auth
 ## Getting started
 ### Ubuntu based systems
 ```
-cd src/
+cd smart-auth/src/
 mkdir dataset/
 python3 generate.py
 python3 train.py

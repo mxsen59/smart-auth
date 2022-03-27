@@ -38,3 +38,6 @@ then add at the bottom of .bashrc file
 ```
 alias smart-auth='/home/masen/Desktop/run_authorizer.sh &'
 ```
+
+## Dependencies
+

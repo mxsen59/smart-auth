@@ -34,7 +34,6 @@ while True:
     face_locs = face_recognition.face_locations(img)
 
     if len(face_locs) != 0:
-
         face_encs = face_recognition.face_encodings(
             img, known_face_locations=face_locs)
 

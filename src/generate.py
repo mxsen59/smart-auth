@@ -19,13 +19,15 @@ detector = dlib.get_frontal_face_detector()
 
 user_name = input("Enter user's name: ")
 
-folder_name = "dataset/" + user_name
+root = "dataset"
 
-if os.path.exists(folder_name):
+full_path = root + "/" + user_name
+
+if os.path.exists(full_path):
     print("Folder exists")
 
 else:
-    os.mkdir(folder_name)
+    os.mkdir(full_path)
 
 if not args.get("file", False):
     capture = cv2.VideoCapture(0)
@@ -36,7 +38,6 @@ else:
 while True:
 
     if frame_count % 5 == 0:
-
         print("keyframe")
 
         (grabbed, image) = capture.read()
@@ -62,12 +63,14 @@ while True:
             number += 1
 
             cv2.imwrite(fram, out_image)
+
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
         frame_count += 1
 
     else:
         frame_count += 1
+        
         print("redundant frame")
 
     if number > 51:
@@ -79,4 +82,5 @@ while True:
         break
 
 capture.release()
+
 cv2.destroyAllWindows()

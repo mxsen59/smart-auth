@@ -10,7 +10,6 @@ from PIL import Image, ImageDraw
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
-
 def train(_dir, model_file=None, n_neighbors=None, knn_alg='ball_tree', verbose=False):
     img_dirs = list(paths.list_images('dataset'))
 
@@ -45,7 +44,6 @@ def train(_dir, model_file=None, n_neighbors=None, knn_alg='ball_tree', verbose=
             pickle.dump(knn_clf, model)
 
     return knn_clf
-
 
 if __name__ == "__main__":
     print("Training KNN classifier...")

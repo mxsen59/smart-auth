@@ -49,7 +49,7 @@ while True:
 
             if user not in "unknown":
                 os.popen(
-                    "xscreensaver-command -deactivate")
+                    'xscreensaver-command -deactivate')
 
             cv2.rectangle(image, (left, bottom),
                           (right, top), (0, 255, 0), 2)
@@ -58,7 +58,7 @@ while True:
                         cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 0, 0), 2)
 
     else:
-        os.popen("xscreensaver-command -activate")
+        os.popen('xscreensaver-command -activate')
 
     # cv2.imshow("output", image)
 
@@ -66,4 +66,5 @@ while True:
         break
 
 capture.release()
+
 cv2.destroyAllWindows()

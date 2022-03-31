@@ -1,6 +1,11 @@
 # smart-auth
 Device authentication using OpenCV for Linux systems
 
+## Cloning
+```shell
+git clone https://github.com/masen-f/smart-auth
+```
+
 ## Dependencies
 1. python 3.9
 2. opencv 4.2.0
@@ -24,11 +29,6 @@ chmod +x install_deb.sh
 cd smart-auth/install/
 chmod +x install_arch.sh
 ./install_arch.sh
-```
-
-## Cloning
-```shell
-git clone https://github.com/masen-f/smart-auth
 ```
 
 ## Getting started

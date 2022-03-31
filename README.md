@@ -36,7 +36,7 @@ then add at the bottom of .bashrc file
 alias smart-auth='/path/to/your/custom/shell/script.sh &'
 ```
 then after saving .bashrc file
-```
+```shell
 source .bashrc
 ```
 

@@ -49,3 +49,17 @@ alias smart-auth='/path/to/your/custom/shell/script.sh &'
 8. face-recognition
 9. xscreensaver
 10. xdotool
+
+## Quick install dependencies
+### Ubuntu based systems
+```
+cd smart-auth/install/
+chmod +x install_deb.sh
+./install_deb.sh
+```
+### Arch based systems
+```
+cd smart-auth/install/
+chmod +x install_arch.sh
+./install_arch.sh
+```

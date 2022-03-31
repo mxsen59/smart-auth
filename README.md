@@ -49,7 +49,7 @@ alias smart-auth='/path/to/your/custom/shell/script.sh &'
 9. xscreensaver
 10. xdotool
 
-## Quick install dependencies
+## Installing dependencies
 ### Ubuntu based systems
 ```shell
 cd smart-auth/install/

@@ -7,7 +7,6 @@ git clone https://github.com/masen-f/smart-auth
 ```
 
 ## Getting started
-### Ubuntu based systems
 ```shell
 cd smart-auth/src/
 mkdir dataset/

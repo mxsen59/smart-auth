@@ -35,6 +35,10 @@ then add at the bottom of .bashrc file
 ```shell
 alias smart-auth='/path/to/your/custom/shell/script.sh &'
 ```
+then after saving .bashrc file
+```
+source .bashrc
+```
 
 ## Dependencies
 1. python 3.9

@@ -42,10 +42,11 @@ alias smart-auth='/path/to/your/custom/shell/script.sh &'
 ## Dependencies
 1. python 3.9
 2. opencv 4.2.0
-3. imutils
-4. numpy
-5. h5py
-6. dlib
-7. face-recognition
-8. xscreensaver
-9. xdotool
+3. sklearn
+4. imutils
+5. numpy
+6. h5py
+7. dlib
+8. face-recognition
+9. xscreensaver
+10. xdotool

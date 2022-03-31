@@ -43,24 +43,3 @@ python3 train.py
 ```shell
 python3 authorizer.py
 ```
-
-## Custom shell script to run smart-auth
-my_shell_script_name.sh
-```shell
-cd /path/to/smart-auth/src/directory
-
-python3 authorizer.py
-```
-
-## Adding smart-auth to .bashrc for simple system wide execution
-```shell
-sudo nano .bashrc
-```
-then add at the bottom of .bashrc file
-```shell
-alias smart-auth='/path/to/your/custom/shell/script.sh &'
-```
-then after saving .bashrc file
-```shell
-source .bashrc
-```

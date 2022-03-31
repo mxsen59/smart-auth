@@ -2,13 +2,13 @@
 Device authentication using OpenCV for Linux systems
 
 ## Cloning
-```
+```shell
 git clone https://github.com/masen-f/smart-auth
 ```
 
 ## Getting started
 ### Ubuntu based systems
-```
+```shell
 cd smart-auth/src/
 mkdir dataset/
 python3 generate.py
@@ -16,14 +16,13 @@ python3 train.py
 ```
 
 ## Running smart-auth
-```
+```shell
 python3 authorizer.py
 ```
 
 ## Custom shell script to run smart-auth
 my_shell_script_name.sh
 ```shell
-
 cd /path/to/smart-auth/src/directory
 
 python3 authorizer.py

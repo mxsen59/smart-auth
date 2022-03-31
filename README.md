@@ -46,7 +46,6 @@ alias smart-auth='/path/to/your/custom/shell/script.sh &'
 7. dlib
 8. face-recognition
 9. xscreensaver
-10. xdotool
 
 ## Installing dependencies
 ### Ubuntu based systems

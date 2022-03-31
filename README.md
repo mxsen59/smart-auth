@@ -1,6 +1,31 @@
 # smart-auth
 Device authentication using OpenCV for Linux systems
 
+## Dependencies
+1. python 3.9
+2. opencv 4.2.0
+3. sklearn
+4. imutils
+5. numpy
+6. h5py
+7. dlib
+8. face-recognition
+9. xscreensaver
+
+## Installing dependencies
+### Ubuntu based systems
+```shell
+cd smart-auth/install/
+chmod +x install_deb.sh
+./install_deb.sh
+```
+### Arch based systems
+```shell
+cd smart-auth/install/
+chmod +x install_arch.sh
+./install_arch.sh
+```
+
 ## Cloning
 ```shell
 git clone https://github.com/masen-f/smart-auth
@@ -38,29 +63,4 @@ alias smart-auth='/path/to/your/custom/shell/script.sh &'
 then after saving .bashrc file
 ```shell
 source .bashrc
-```
-
-## Dependencies
-1. python 3.9
-2. opencv 4.2.0
-3. sklearn
-4. imutils
-5. numpy
-6. h5py
-7. dlib
-8. face-recognition
-9. xscreensaver
-
-## Installing dependencies
-### Ubuntu based systems
-```shell
-cd smart-auth/install/
-chmod +x install_deb.sh
-./install_deb.sh
-```
-### Arch based systems
-```shell
-cd smart-auth/install/
-chmod +x install_arch.sh
-./install_arch.sh
 ```

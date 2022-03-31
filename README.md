@@ -1,7 +1,7 @@
 # smart-auth
 Device authentication using OpenCV for Linux systems
 
-## Installing
+## Cloning
 ```
 git clone https://github.com/masen-f/smart-auth
 ```

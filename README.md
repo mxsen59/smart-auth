@@ -29,7 +29,7 @@ python3 authorizer.py
 ```
 
 ## Adding smart-auth to .bashrc for simple system wide execution
-```
+```shell
 sudo nano .bashrc
 ```
 then add at the bottom of .bashrc file

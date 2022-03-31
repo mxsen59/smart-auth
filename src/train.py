@@ -5,7 +5,6 @@ import pickle
 import numpy as np
 from imutils import paths
 import face_recognition
-from face_recognition.cli import image_files_in_folder
 from sklearn import neighbors
 from PIL import Image, ImageDraw
 

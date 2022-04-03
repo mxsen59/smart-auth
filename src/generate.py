@@ -58,7 +58,7 @@ while True:
 
             out_image = cv2.resize(cro, (108, 108))
 
-            fram = os.path.join(folder_name+"/", str(number) + "." + "jpg")
+            fram = os.path.join(full_path + "/", str(number) + "." + "jpg")
 
             number += 1
 

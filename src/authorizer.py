@@ -1,7 +1,9 @@
 import os
+import sys
 import cv2
 import h5py
 import dlib
+import ctypes
 import pickle
 import imutils
 import numpy as np
@@ -13,6 +15,8 @@ from PIL import Image, ImageDraw
 parser = ap.ArgumentParser()
 parser.add_argument("-f", "--file", help="path to the video file")
 args = vars(parser.parse_args())
+
+dll = ctypes.WinDLL("user32.dll")
 
 with open("knn_model.clf", "rb") as model:
     knn_clf = pickle.load(model)
@@ -48,8 +52,13 @@ while True:
         for user, (top, right, bottom, left) in predictions:
 
             if user not in "unknown":
-                os.popen(
-                    'xscreensaver-command -deactivate')
+
+                if sys.platform.startswith("linux"):
+                    os.popen(
+                        'xscreensaver-command -deactivate')
+
+                elif sys.platform == "win32":
+                    pass
 
             cv2.rectangle(image, (left, bottom),
                           (right, top), (0, 255, 0), 2)
@@ -58,7 +67,12 @@ while True:
                         cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 0, 0), 2)
 
     else:
-        os.popen('xscreensaver-command -activate')
+
+        if sys.platform.startswith("linux"):
+            os.popen('xscreensaver-command -activate')
+
+        elif sys.platform == "win32":
+            dll.LockWorkStation()
 
     # cv2.imshow("output", image)
 

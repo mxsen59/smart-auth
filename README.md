@@ -59,3 +59,7 @@ py train.py
 ```shell
 python3 authorizer.py
 ```
+or
+```
+py authorizer.py
+```

@@ -1,5 +1,5 @@
 # smart-auth
-Device authentication using OpenCV for Linux systems
+Device authentication using OpenCV
 
 ## Cloning
 ```shell

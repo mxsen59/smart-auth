@@ -15,7 +15,7 @@ git clone https://github.com/masen-f/smart-auth
 6. h5py
 7. dlib
 8. face-recognition
-9. xscreensaver
+9. xscreensaver (Linux systems)
 
 ## Installing dependencies
 ### Ubuntu based systems
@@ -24,6 +24,7 @@ cd smart-auth/install/
 chmod +x install_deb.sh
 ./install_deb.sh
 ```
+
 ### Arch based systems
 ```shell
 cd smart-auth/install/
@@ -31,12 +32,27 @@ chmod +x install_arch.sh
 ./install_arch.sh
 ```
 
+### Windows systems
+```
+py -m pip install -r requirements.txt
+```
+
 ## Getting started
+### Linux systems
 ```shell
 cd smart-auth/src/
 mkdir dataset/
 python3 generate.py
 python3 train.py
+```
+
+## Getting started
+### Windows systems
+```shell
+.\setup.bat
+cd .\src\
+py generate.py
+py train.py
 ```
 
 ## Running smart-auth

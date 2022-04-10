@@ -1,0 +1,7 @@
+sklearn
+imutils
+cmake
+numpy
+h5py
+dlib
+face-recognition
